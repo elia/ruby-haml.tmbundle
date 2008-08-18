@@ -73,6 +73,10 @@
 					<key>include</key>
 					<string>source.js</string>
 				</dict>
+				<dict>
+					<key>include</key>
+					<string>source.js.jquery</string>
+				</dict>
 			</array>
 		</dict>
 		<dict>
