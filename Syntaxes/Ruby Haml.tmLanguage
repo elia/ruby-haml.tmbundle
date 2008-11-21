@@ -364,6 +364,21 @@
 			</array>
 		</dict>
 		<dict>
+			<key>begin</key>
+			<string>^(\s*):sass(_styles)?$</string>
+			<key>end</key>
+			<string>^\1$</string>
+			<key>name</key>
+			<string>source.embedded.filter.sass</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.sass</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
