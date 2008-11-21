@@ -414,7 +414,7 @@
 			<key>end</key>
 			<string>^\1$</string>
 			<key>name</key>
-			<string>source.embedded.filter.sass</string>
+			<string>source.sass.embedded.filter.haml</string>
 			<key>patterns</key>
 			<array>
 				<dict>
