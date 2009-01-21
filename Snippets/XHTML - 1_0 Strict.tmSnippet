@@ -5,7 +5,7 @@
 	<key>bundleUUID</key>
 	<string>4618480A-F4C3-40FE-8719-DE54CBDFB92A</string>
 	<key>content</key>
-	<string>!!!</string>
+	<string>!!! strict</string>
 	<key>name</key>
 	<string>XHTML - 1.0 Strict</string>
 	<key>scope</key>
