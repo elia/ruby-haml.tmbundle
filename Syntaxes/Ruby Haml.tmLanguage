@@ -76,6 +76,21 @@
 			</array>
 		</dict>
 		<dict>
+			<key>begin</key>
+			<string>^(\s*):javascript$</string>
+			<key>end</key>
+			<string>^\1$</string>
+			<key>name</key>
+			<string>source.embedded.filter.js</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.js</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
