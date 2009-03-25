@@ -124,16 +124,32 @@
 					</array>
 				</dict>
 				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>entity.other.attribute-name.class</string>
+						</dict>
+					</dict>
 					<key>match</key>
-					<string>\.[\w-]+</string>
+					<string>(\.[\w-]+)</string>
 					<key>name</key>
-					<string>entity.name.tag.class.haml</string>
+					<string>meta.selector.css</string>
 				</dict>
 				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>entity.other.attribute-name.id</string>
+						</dict>
+					</dict>
 					<key>match</key>
-					<string>#[\w-]+</string>
+					<string>(#[\w-]+)</string>
 					<key>name</key>
-					<string>entity.name.tag.id.haml</string>
+					<string>meta.selector.css</string>
 				</dict>
 				<dict>
 					<key>begin</key>
@@ -187,7 +203,15 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>^(\s*):ruby$</string>
+			<string>^(\s*)(:ruby)</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.filter.haml</string>
+				</dict>
+			</dict>
 			<key>end</key>
 			<string>^(?!\1  )</string>
 			<key>name</key>
@@ -202,7 +226,15 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>^(\s*)(:java|%)script</string>
+			<string>^(\s*)(:javascript)</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.filter.haml</string>
+				</dict>
+			</dict>
 			<key>end</key>
 			<string>^(?!\1  )</string>
 			<key>name</key>
@@ -212,6 +244,29 @@
 				<dict>
 					<key>include</key>
 					<string>source.js.jquery</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>^(\s*)(:sass)</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.filter.haml</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>^(?!\1  )</string>
+			<key>name</key>
+			<string>source.embedded.filter.sass</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.sass</string>
 				</dict>
 			</array>
 		</dict>
