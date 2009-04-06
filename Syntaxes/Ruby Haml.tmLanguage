@@ -176,7 +176,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>^(\s*):styles$</string>
+			<string>^(\s*):(styles|sass)$</string>
 			<key>end</key>
 			<string>^\1$</string>
 			<key>name</key>
@@ -191,7 +191,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>^(\s*):script$</string>
+			<string>^(\s*):(java)?script$</string>
 			<key>end</key>
 			<string>^\1$</string>
 			<key>name</key>
@@ -201,6 +201,21 @@
 				<dict>
 					<key>include</key>
 					<string>source.js</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>^(\s*):plain$</string>
+			<key>end</key>
+			<string>^\1$</string>
+			<key>name</key>
+			<string>text.plain.embedded.filter.haml</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>text.plain</string>
 				</dict>
 			</array>
 		</dict>
