@@ -191,21 +191,6 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>^(\s*):(md|markdown)$</string>
-			<key>end</key>
-			<string>^$</string>
-			<key>name</key>
-			<string>text.html.markdown.embedded.filter.haml</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>text.html.markdown</string>
-				</dict>
-			</array>
-		</dict>
-		<dict>
-			<key>begin</key>
 			<string>^(\s*):(java)?script$</string>
 			<key>end</key>
 			<string>^\1([^\s]*)$</string>
