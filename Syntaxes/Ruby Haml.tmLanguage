@@ -193,7 +193,7 @@
 			<key>begin</key>
 			<string>^(\s*):(md|markdown)$</string>
 			<key>end</key>
-			<string>^\1([^\s]*)$</string>
+			<string>^(\1([^\s]*))|$</string>
 			<key>name</key>
 			<string>text.html.markdown.embedded.filter.haml</string>
 			<key>patterns</key>
