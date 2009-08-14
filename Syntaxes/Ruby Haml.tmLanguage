@@ -178,7 +178,7 @@
 			<key>begin</key>
 			<string>^(\s*):(style|sass)$</string>
 			<key>end</key>
-			<string>^\1([^\s]*)$</string>
+			<string>^\1$</string>
 			<key>name</key>
 			<string>source.sass.embedded.filter.haml</string>
 			<key>patterns</key>
@@ -193,7 +193,7 @@
 			<key>begin</key>
 			<string>^(\s*):(md|markdown)$</string>
 			<key>end</key>
-			<string>^(\1([^\s]*))|$</string>
+			<string>^$</string>
 			<key>name</key>
 			<string>text.html.markdown.embedded.filter.haml</string>
 			<key>patterns</key>
