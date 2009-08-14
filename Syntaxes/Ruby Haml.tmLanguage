@@ -176,7 +176,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>^(\s*):(styles|sass)$</string>
+			<string>^(\s*):(style|sass)$</string>
 			<key>end</key>
 			<string>^\1([^\s]*)$</string>
 			<key>name</key>
