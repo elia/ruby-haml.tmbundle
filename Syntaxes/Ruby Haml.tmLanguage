@@ -17,6 +17,21 @@
 	<string>Ruby Haml</string>
 	<key>patterns</key>
 	<array>
+	  <dict>
+			<key>begin</key>
+			<string>^( *):javascript</string>
+			<key>end</key>
+			<string>^(?!\1  )</string>
+			<key>name</key>
+			<string>js.haml</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.js.jquery</string>
+				</dict>
+			</array>
+		</dict>
 		<dict>
 			<key>begin</key>
 			<string>^\s*==</string>
