@@ -362,6 +362,8 @@
 		<dict>
 			<key>begin</key>
 			<string>!?==</string>
+			<key>contentName</key>
+			<string>string.source.ruby.embedded.haml</string>
 			<key>end</key>
 			<string>$</string>
 			<key>name</key>
