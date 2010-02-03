@@ -31,6 +31,21 @@
 				</dict>
 			</array>
 		</dict>
+    <dict>
+      <key>begin</key>
+      <string>^(\s*):ruby$</string>
+      <key>end</key>
+      <string>^\1$</string>
+      <key>name</key>
+      <string>source.ruby.embedded.filter.haml</string>
+      <key>patterns</key>
+      <array>
+        <dict>
+          <key>include</key>
+          <string>source.ruby.rails</string>
+        </dict>
+      </array>
+    </dict>
 		<dict>
 			<key>captures</key>
 			<dict>
@@ -45,6 +60,55 @@
 			<key>name</key>
 			<string>meta.prolog.haml</string>
 		</dict>
+		<dict>
+			<key>begin</key>
+			<string>:javascript</string>
+			<key>end</key>
+			<string>^(\s+)?%</string>
+			<key>name</key>
+			<string>source.js.embedded.haml</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.js</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>source.js.jquery</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>^(\s*):javascript$</string>
+			<key>end</key>
+			<string>^\1$</string>
+			<key>name</key>
+			<string>source.embedded.filter.js</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.js</string>
+				</dict>
+			</array>
+		</dict>
+    <dict>
+      <key>begin</key>
+      <string>^(\s*):ruby$</string>
+      <key>end</key>
+      <string>^\1$</string>
+      <key>name</key>
+      <string>source.ruby.embedded.filter.haml</string>
+      <key>patterns</key>
+      <array>
+        <dict>
+          <key>include</key>
+          <string>source.ruby.rails</string>
+        </dict>
+      </array>
+    </dict>
 		<dict>
 			<key>captures</key>
 			<dict>
@@ -345,6 +409,51 @@
 				<dict>
 					<key>include</key>
 					<string>source.sass</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>^(\s*):(styles|sass)$</string>
+			<key>end</key>
+			<string>^\1$</string>
+			<key>name</key>
+			<string>source.sass.embedded.filter.haml</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.sass</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>^(\s*):(java)?script$</string>
+			<key>end</key>
+			<string>^\1$</string>
+			<key>name</key>
+			<string>source.js.embedded.filter.haml</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.js</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>^(\s*):plain$</string>
+			<key>end</key>
+			<string>^\1$</string>
+			<key>name</key>
+			<string>text.plain.embedded.filter.haml</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>text.plain</string>
 				</dict>
 			</array>
 		</dict>
