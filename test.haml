@@ -1,0 +1,34 @@
+:style
+  body
+    :background red
+  
+  #foo
+    :color blue
+
+:ruby
+  require 'foo'
+  
+  puts "bar"
+
+:javascript
+  console.log('foo');
+
+%head
+  %style
+    :sass
+      body
+        :background red
+
+      #foo
+        :color blue
+    
+  %script{:src => '/jquery.js'}
+  
+  :javascript
+    console.log('foo');
+  
+
+%body
+  :plain
+    this is plain text
+  
