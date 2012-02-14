@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>contactEmailRot13</key>
-	<string>mpolito@reactioncontrol.com</string>
+	<string>ryvn@fpuvgb.zr</string>
 	<key>contactName</key>
-	<string>Matt Polito</string>
+	<string>Elia Schito</string>
 	<key>description</key>
-	<string>&lt;a href="http://unspace.ca/discover/haml"&gt;HTML Abstraction Markup Language&lt;/a&gt; is a templating engine for Ruby on Rails.</string>
+	<string>&lt;a href="http://haml-lang.com"&gt;HTML Abstraction Markup Language (markup haiku)&lt;/a&gt; is an HTML templating engine for Ruby.</string>
 	<key>mainMenu</key>
 	<dict>
 		<key>items</key>
