@@ -5,7 +5,7 @@
 	<key>fileTypes</key>
 	<array>
 		<string>haml</string>
-		<string>sass</string>
+		<string>html.haml</string>
 	</array>
 	<key>foldingStartMarker</key>
 	<string>^\s*([-%#\:\.\w\=].*)\s$</string>
@@ -17,7 +17,7 @@
 	<string>Ruby Haml</string>
 	<key>patterns</key>
 	<array>
-	  <dict>
+		<dict>
 			<key>begin</key>
 			<string>^( *):javascript</string>
 			<key>end</key>
@@ -47,21 +47,21 @@
 				</dict>
 			</array>
 		</dict>
-    <dict>
-      <key>begin</key>
-      <string>^(\s*):ruby$</string>
-      <key>end</key>
-      <string>^\1$</string>
-      <key>name</key>
-      <string>source.ruby.embedded.filter.haml</string>
-      <key>patterns</key>
-      <array>
-        <dict>
-          <key>include</key>
-          <string>source.ruby.rails</string>
-        </dict>
-      </array>
-    </dict>
+		<dict>
+			<key>begin</key>
+			<string>^(\s*):ruby$</string>
+			<key>end</key>
+			<string>^\1$</string>
+			<key>name</key>
+			<string>source.ruby.embedded.filter.haml</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.ruby.rails</string>
+				</dict>
+			</array>
+		</dict>
 		<dict>
 			<key>captures</key>
 			<dict>
@@ -110,21 +110,21 @@
 				</dict>
 			</array>
 		</dict>
-    <dict>
-      <key>begin</key>
-      <string>^(\s*):ruby$</string>
-      <key>end</key>
-      <string>^\1$</string>
-      <key>name</key>
-      <string>source.ruby.embedded.filter.haml</string>
-      <key>patterns</key>
-      <array>
-        <dict>
-          <key>include</key>
-          <string>source.ruby.rails</string>
-        </dict>
-      </array>
-    </dict>
+		<dict>
+			<key>begin</key>
+			<string>^(\s*):ruby$</string>
+			<key>end</key>
+			<string>^\1$</string>
+			<key>name</key>
+			<string>source.ruby.embedded.filter.haml</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.ruby.rails</string>
+				</dict>
+			</array>
+		</dict>
 		<dict>
 			<key>captures</key>
 			<dict>
@@ -284,21 +284,21 @@
 				</dict>
 			</array>
 		</dict>
-    <dict>
-      <key>begin</key>
-      <string>^(\s*):ruby$</string>
-      <key>end</key>
-      <string>^\1$</string>
-      <key>name</key>
-      <string>source.ruby.embedded.filter.haml</string>
-      <key>patterns</key>
-      <array>
-        <dict>
-          <key>include</key>
-          <string>source.ruby.rails</string>
-        </dict>
-      </array>
-    </dict>
+		<dict>
+			<key>begin</key>
+			<string>^(\s*):ruby$</string>
+			<key>end</key>
+			<string>^\1$</string>
+			<key>name</key>
+			<string>source.ruby.embedded.filter.haml</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.ruby.rails</string>
+				</dict>
+			</array>
+		</dict>
 		<dict>
 			<key>begin</key>
 			<string>^(\s*):ruby$</string>
