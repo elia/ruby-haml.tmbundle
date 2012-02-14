@@ -90,7 +90,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>$|(?!\.|#|\{|!|\[|&amp;|=|-|~|/)</string>
+			<string>$|(?!\.|#|\{|\(|!|\[|&amp;|=|-|~|/)</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -121,6 +121,48 @@
 						<dict>
 							<key>include</key>
 							<string>#continuation</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>begin</key>
+					<string>\(</string>
+					<key>end</key>
+					<string>\)</string>
+					<key>name</key>
+					<string>meta.section.attributes.plain.haml</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>match</key>
+							<string>([\w-]+)</string>
+							<key>name</key>
+							<string>constant.other.symbol.ruby</string>
+						</dict>
+						<dict>
+							<key>match</key>
+							<string>\=</string>
+							<key>name</key>
+							<string>punctuation</string>
+						</dict>
+						<dict>
+							<key>begin</key>
+							<string>\"</string>
+							<key>end</key>
+							<string>\"</string>
+							<key>name</key>
+							<string>string.quoted.double.ruby</string>
+							<key>patterns</key>
+							<array>
+								<dict>
+									<key>include</key>
+									<string>#interpolated_ruby</string>
+								</dict>
+							</array>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#interpolated_ruby</string>
 						</dict>
 					</array>
 				</dict>
