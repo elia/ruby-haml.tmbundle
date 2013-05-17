@@ -276,6 +276,21 @@
 			</array>
 		</dict>
 		<dict>
+			<key>begin</key>
+			<string>^(\s*):preserve$</string>
+			<key>end</key>
+			<string>^(?:\1(?:[^\s]*)|)$</string>
+			<key>name</key>
+			<string>text.plain.embedded.filter.haml</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>text.plain</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
@@ -474,7 +489,7 @@
 			<key>contentName</key>
 			<string>source.ruby.embedded.haml</string>
 			<key>end</key>
-			<string>((do|\{)( \|[^|]+\|)?)?$|^(?!.*\|\s*$)</string>
+			<string>$(?!.*,\s*$)</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>1</key>
