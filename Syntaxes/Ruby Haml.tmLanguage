@@ -247,6 +247,21 @@
 		</dict>
 		<dict>
 			<key>begin</key>
+			<string>^(\s*):coffee(script)?$</string>
+			<key>end</key>
+			<string>^\1([^\s]*)$</string>
+			<key>name</key>
+			<string>source.coffee.embedded.filter.haml</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.coffee</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
 			<string>^(\s*):plain$</string>
 			<key>end</key>
 			<string>^\1([^\s]*)$</string>
