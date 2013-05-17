@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>saveActiveFile</string>
+	<key>command</key>
+	<string>#!/usr/bin/env /usr/bin/ruby
+
+# TextMate Command Settings: 
+# Save: Current File
+# Input: None
+# Output: Show as Tool Tip
+# Activation: Key equivalent CMD+S
+# Scope Selector: text.haml, source.js.embedded.filter.haml
+
+
+# Exit now if Haml is already in the bundle
+gemfile_dir = ENV['TM_PROJECT_DIRECTORY']
+gemfile = File.join(gemfile_dir.to_s,'Gemfile')
+
+exit if (File.exist?(gemfile) and File.read(gemfile) =~ /^\s*gem[^#]+\bhaml\b/)
+
+# Get dependencies since we have no gem
+require 'rubygems'
+gem 'haml', '~&gt; 3.1.3'
+
+# require the lib
+$:.unshift File.expand_path("~/Code/haml2erb/lib")
+require 'haml2erb'
+
+
+# Get ERB name and convert
+
+haml_name = ENV['TM_FILEPATH']
+erb_name  = haml_name.gsub(/\.haml$/, '.erb')
+
+input  = File.open(haml_name)
+output = File.open(erb_name, 'w')
+
+output.write Haml2Erb.convert(input.read)
+
+
+# YAY!
+puts "compiled (#{File.basename erb_name})"</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>@s</string>
+	<key>name</key>
+	<string>Convert HAML to ERB</string>
+	<key>output</key>
+	<string>showAsTooltip</string>
+	<key>scope</key>
+	<string>text.haml, source.js.embedded.filter.haml</string>
+	<key>uuid</key>
+	<string>10189179-19A4-4848-B046-13A916C1C007</string>
+</dict>
+</plist>

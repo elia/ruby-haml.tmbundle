@@ -2,17 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>bundleUUID</key>
-	<string>4618480A-F4C3-40FE-8719-DE54CBDFB92A</string>
 	<key>content</key>
-	<string>!!!</string>
+	<string>%br
+</string>
+	<key>keyEquivalent</key>
+	<string>^</string>
 	<key>name</key>
-	<string>XHTML - 1.0 Transitional</string>
+	<string>Insert Line Break</string>
 	<key>scope</key>
 	<string>text.haml</string>
-	<key>tabTrigger</key>
-	<string>doctype</string>
 	<key>uuid</key>
-	<string>CE71AC06-DD61-484A-A2EE-8868D3C77954</string>
+	<string>FD4C9598-6148-45D3-A11E-4E84578A4CD6</string>
 </dict>
 </plist>

@@ -2,17 +2,15 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>bundleUUID</key>
-	<string>4618480A-F4C3-40FE-8719-DE54CBDFB92A</string>
 	<key>content</key>
-	<string>!!!</string>
+	<string>%meta{ 'http-equiv' =&gt; 'Content-Type', :content =&gt; 'text/html;', 'charset' =&gt; 'utf-8'${1:, }$2 }$0</string>
 	<key>name</key>
-	<string>XHTML - 1.0 Transitional</string>
+	<string>Meta - http-equiv</string>
 	<key>scope</key>
 	<string>text.haml</string>
 	<key>tabTrigger</key>
-	<string>doctype</string>
+	<string>meta</string>
 	<key>uuid</key>
-	<string>CE71AC06-DD61-484A-A2EE-8868D3C77954</string>
+	<string>BAEB7258-0745-408B-8270-F8EE7BAB7E64</string>
 </dict>
 </plist>
