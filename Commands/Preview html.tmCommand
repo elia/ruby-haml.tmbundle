@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>command</key>
+	<string>#!/usr/bin/env bash
+
+haml --stdin
+</string>
+	<key>keyEquivalent</key>
+	<string>^~@p</string>
+	<key>name</key>
+	<string>Preview html</string>
+	<key>outputFormat</key>
+	<string>html</string>
+	<key>outputLocation</key>
+	<string>newWindow</string>
+	<key>scope</key>
+	<string>text.haml</string>
+	<key>uuid</key>
+	<string>3320D5A0-1042-453F-BAD7-5CC264A5B9D9</string>
+</dict>
+</plist>
