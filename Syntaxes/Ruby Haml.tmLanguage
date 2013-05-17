@@ -202,7 +202,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>^(\s*):ruby$</string>
+			<string>^(\s*):(ruby|opal)$</string>
 			<key>end</key>
 			<string>^\1([^\s]*)$</string>
 			<key>name</key>
