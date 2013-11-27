@@ -9,7 +9,7 @@
 	<key>input</key>
 	<string>selection</string>
 	<key>keyEquivalent</key>
-	<string>~@c</string>
+	<string>@b</string>
 	<key>name</key>
 	<string>Convert HTML to HAML</string>
 	<key>outputCaret</key>
